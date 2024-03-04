@@ -71,13 +71,14 @@ body {
 /*--------------------SlideShow-----------------------*/
 
 .container{
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .slider-wrapper{
   position: relative;
   max-width:80rem;
-  margin: 0 auto;
+  margin: 0rem;
+  overflow: auto;
 }
 
 .slider{
@@ -101,7 +102,7 @@ body {
   display: flex;
   column-gap: 1rem;
   position: absolute;
-  bottom: 1.25rem;
+  bottom: .7rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
