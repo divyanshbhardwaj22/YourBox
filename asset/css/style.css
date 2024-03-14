@@ -7,11 +7,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: rgb(158, 158, 233);
+  background-color: rgb(192, 192, 192);
 }
 
 .navbar {
-  background-color: #2e2e2e;
+  background-color: #14185a;
   text-align: center;
   padding: 10px;
 }
@@ -264,13 +264,9 @@ body {
 }
 
 .card {
-<<<<<<< HEAD
 flex: 0 0 calc(25.33%); /* Three cards in a row with margin */
 margin: 20px 40px;
-=======
-  flex: 0 0 calc(25.33%); /* Three cards in a row with margin */
-  margin: 10px;
->>>>>>> d190004fd6ad5728094810bb22f990aa7df98ace
+
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.897);
   border-radius: 8px;
@@ -340,6 +336,7 @@ margin: 20px 40px;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  padding-bottom: 4rem;
 }
 
 .footer-content {
@@ -348,12 +345,10 @@ margin: 20px 40px;
 }
 
 .footer p {
-<<<<<<< HEAD
+
 margin: 5px 0;
 font-size: 15px;
-=======
-  margin: 5px 0;
->>>>>>> d190004fd6ad5728094810bb22f990aa7df98ace
+
 }
 
 
