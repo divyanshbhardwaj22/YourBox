@@ -1,159 +1,64 @@
+
+
 *{
-    padding: 0;
-    border: 0;
-    margin:0;
-}
-
-body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #e4e4e4;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #131921;
-  text-align: center;
-  padding: 10px;
-}
-
-.logo img {
-  width: 20%;
+.logo a{
   height: 100%;
+  width: 30%;
+}
+
+.logo a img{
+  height: 100%;
+  width: 100%;
 }
 
 .logo{
   display: flex;
   justify-content: center;
-  height: 18%;
+  align-items: center;
+  height: 90%;
 }
 
-.menu ul {
-  list-style-type: none;
-  margin-top: 0 0 0 0 ;
-  padding: 0;
-
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+  background-color: #131921;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.menu ul li {
-  display: inline-block;
-  margin: 0 4rem;
-  font-size: 20px;
-  letter-spacing: 4px;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-family: "Roboto Condensed", sans-serif;
-
+.navbar{
+  height: 6vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #232f3e;
 }
 
-.menu ul li:last-child {
-  margin-right: 0;
-}
-
-.menu ul li a {
-  
+.nav-items a{
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-size: 2vw;
+  color: white;
   text-decoration: none;
 }
-.aone{
-  color: #fff;
-}
-.aone:active{
-  color: #fff;
 
-}
-.another--1{
-  color: rgb(0, 255, 21);
-  background-color: #47576b;
-  
-  border-radius: 50px;
+.nav-items a{ 
+  color:white;
+  transition: color 0.7s ease-in-out, text-shadow 0.7s linear, transform 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95) font-weight 0.7s;
 }
 
-.another--1:hover{
-  background-color: #667c97;
-  transition: .7s;
+.nav-items a:hover{
+  color: #d09557;
+  transform: scaleX(1.5);
+  text-shadow: 2px 1.3px 10px rgb(127, 82, 82);
+  font-weight: bold;
 }
 
 
 
-@media(max-width:1470px){
-  .menu ul li {
-    margin: 0 3rem;
-  }
-}
-
-@media(max-width:1280px){
-  .menu ul li {
-    margin: 0 2rem;
-  }
-}
-
-@media(max-width:1100px){
-  .menu ul li {
-    margin: 0 1rem;
-  }
-}
-
-@media(max-width:925px){
-  .menu ul li {
-    margin: 0 1rem;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:816px){
-  .menu ul li {
-    margin: 0 1rem;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:716px){
-  .menu ul li {
-    margin: 0 1rem;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:615px){
-  .menu ul li {
-    margin: 0 1rem;
-    font-size: 9px;
-    letter-spacing: 2px;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:540px){
-  .menu ul li {
-    margin: 0 0.4rem;
-    font-size: 8px;
-    letter-spacing: 1.8px;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:400px){
-  .menu ul li {
-    margin: 0 0.3rem;
-    font-size: 8px;
-    letter-spacing: 1.8px;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:384px){
-  .menu ul li {
-    margin: 0 0.2rem;
-    font-size: 7.2px;
-    letter-spacing: 1.7px;
-    font-weight: 300;
-  }
-}
 
 
 /*--------------------SlideShow-----------------------*/
@@ -263,11 +168,6 @@ body {
 
 /*--------------------------Cards--------------------*/
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
 .container {
   display: flex;
@@ -280,6 +180,16 @@ body {
   justify-content: center;
 }
 
+.ext-row{
+  background-color: hwb(0 91% 9%);
+
+
+}
+.main-section-cont{
+  background-color: hwb(0 91% 9%);
+
+
+}
 .card {
 flex: 0 0 calc(25.33%); /* Three cards in a row with margin */
 margin: 20px 40px;
@@ -349,12 +259,15 @@ margin: 20px 40px;
 /*--------------------------Footer------------------*/
 
 .footer {
-  background-color: #333;
+  margin-top: 1ch;
+  background-color: #131921;
+  height: 15vh;
   color: #fff;
-  padding: 20px 0;
+  padding: 2px 0;
   text-align: center;
-  padding-bottom: 4rem;
-  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-content {
