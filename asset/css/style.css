@@ -7,7 +7,7 @@
 }
 
 body{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -45,7 +45,7 @@ body{
 
 .nav-items a{
   font-family: "Baloo Bhai 2", sans-serif;
-  font-size: 2vw;
+  font-size: 1.7vw;
   color: white;
   text-decoration: none;
 }
