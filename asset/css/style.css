@@ -266,13 +266,14 @@ margin: 20px 40px;
 .footer {
   margin-top: 1ch;
   background-color: #131921;
-  height: 15vh;
+  height: 15%;
   color: #fff;
   padding: 2px 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:4%;
 }
 
 .footer-content {
