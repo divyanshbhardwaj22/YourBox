@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  
+  font-family: 'Roboto', sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+}
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: 700;
+  background-image: url('logooo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10rem; /* Adjust width as needed */
+  height: 3rem; /* Adjust height as needed */
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem 0 0;
+  padding: 0;
+}
+.navbar-menu li {
+  font-size: 1.3rem;
+  list-style-type: none;
+  margin-right: 3rem;
+}
+.navbar-menu li:last-child {
+  margin-right: 0;
+}
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+.navbar-menu li a:hover {
+  color: #ffc107;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-menu {
+    margin-top: 10px;
+  }
+}
+
+
+/*--------------------SlideShow-----------------------*/
+
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width:80rem;
+  margin: 1rem 3rem;
+  overflow: auto;
+}
+
+.mySlides{
+  
+  display: flex;
+  aspect-ratio: 30/3;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.856);
+  border-radius: 0.5rem;
+
+
+}
+
+
+.mySlides img{
+  flex: 5 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*----------------------------------Special for you------------------------------*/
+
+.container1 {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+}
+
+
+
+.image-container1 {
+  max-width: 30%;
+}
+
+.image-container1 img {
+  
+  margin-left: 4rem;
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 1rem;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container1 {
+      flex-direction: column;
+  }
+  
+  .image-container1 {
+      max-width: 100%;
+  }
+}
+
+
+
+
+
+/*--------------------------Cards--------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.today{
+  margin: 0rem 0rem 0rem 3.5rem;
+}
+.deal{
+  color: #232f3e;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+
+
+.container00 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row00 {
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  margin-left: 2rem;
+}
+
+.card00 {
+flex: 0 0 calc(18%); /* Three cards in a row with margin */
+margin: 10px 25px;
+
+
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.897);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.card00 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.more{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-top: -9rem;
+  z-index: 1;
+
+}
+
+.seemore{
+  color: white;
+  background-color: #131921;
+  padding: .7rem 3rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+
+}
+
+
+
+
+@media(max-width:900px){
+  .card00{
+    margin: 15px 30px;
+  }
+  }
+
+
+  @media(max-width:750px){
+    .card00{
+      margin: 5px 20px 20px 20px;
+    }
+    .row00{
+      column-gap: 0rem;
+    }
+    }
+
+    @media(max-width:619px){
+      .card00{
+        margin: 0px 10px 40px 10px; 
+      }
+      .row00{
+        column-gap: 1.5rem;
+      }
+      }
+
+
+      @media(max-width:500px){
+        .card00{
+          margin: 0px 10px 25px 10px;
+          flex: 0 0 calc(30.33%);
+        }
+        .row00{
+          margin: 0 10px 0 10px;
+          column-gap: .3rem;
+        }
+        }
+
+
+        @media(max-width:400px){
+          .card00{
+            margin: 0px 10px 20px 10px; 
+            flex: 0 0 calc(30.33%);
+          }
+          .row00{
+            column-gap: 0px;
+          }
+          }
+
+
+
+
+
+
+
+
+
+/*---------------------all rows---------------*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+flex: 0 0 calc(20.33%); /* Three cards in a row with margin */
+margin: 20px 40px;
+
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.897);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@media(max-width:900px){
+  .card{
+    margin: 15px 30px;
+  }
+  }
+
+
+  @media(max-width:750px){
+    .card{
+      margin: 5px 20px 20px 20px;
+    }
+    .row{
+      column-gap: 0rem;
+    }
+    }
+
+    @media(max-width:619px){
+      .card{
+        margin: 0px 10px 40px 10px; 
+      }
+      .row{
+        column-gap: 1.5rem;
+      }
+      }
+
+
+      @media(max-width:500px){
+        .card{
+          margin: 0px 10px 25px 10px;
+          flex: 0 0 calc(30.33%);
+        }
+        .row{
+          margin: 0 10px 0 10px;
+          column-gap: .3rem;
+        }
+        }
+
+
+        @media(max-width:400px){
+          .card{
+            margin: 0px 10px 20px 10px; 
+            flex: 0 0 calc(30.33%);
+          }
+          .row{
+            column-gap: 0px;
+          }
+          }
+/*--------------------------Footer------------------*/
+
+.footer {
+  margin-top: 3rem;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 4rem;
+  position:static;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer p {
+
+margin: 5px 0;
+font-size: 15px;
+
+}
+
+
+@media(max-width:700px){
+  .footer p{
+    font-size: 12px;
+    margin: 0px 0px  7px 0px;
+  }  
+  }
+
+  @media(max-width:450px){
+    .footer p{
+      font-size: 10px;
+      margin: 0px 0px  7px 0px;
+    }  
+    }
+
+    @media(max-width:370px){
+      .footer p{
+        font-size: 8px;
+        margin: 0px 0px  5px 0px;
+      }  
+      }
