@@ -370,6 +370,9 @@ margin: 20px 40px;
           }
 /*--------------------------Footer------------------*/
 
+.footer-section{
+  width: 100vw;
+}
 .footer {
   margin-top: 3rem;
   background-color: #333;
@@ -377,7 +380,7 @@ margin: 20px 40px;
   padding: 20px 0;
   text-align: center;
   padding-bottom: 4rem;
-  position:static;
+  width: 100%;
 }
 
 .footer-content {
