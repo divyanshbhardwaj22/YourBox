@@ -130,11 +130,11 @@ body {
     padding: 5px; /* Adjusted padding */
     border-radius: 20px; /* Adjusted border-radius */
     width: 320px; /* Set width to 320px */
-    margin: 0 auto; /* Center the navbar within the container */
+    margin: 0 auto 0 1.5rem; /* Center the navbar within the container */
 }
 
 .nav-item {
-    margin: .1rem;
+    margin-right: .1rem;
     display: flex;
     align-items: center;
     padding: 3px 6px; /* Adjusted padding */
