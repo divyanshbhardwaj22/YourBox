@@ -125,24 +125,27 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Changed from space-around to space-between */
     background: rgba(255, 255, 255, 0.8);
-    padding: 8px; /* Adjusted padding */
+    padding: 5px; /* Adjusted padding */
     border-radius: 20px; /* Adjusted border-radius */
+    width: 350px; /* Set width to 350px */
+    margin: 0 auto; /* Center the navbar within the container */
 }
 
 .nav-item {
     display: flex;
     align-items: center;
-    padding: 5px 8px; /* Adjusted padding */
+    padding: 3px 6px; /* Adjusted padding */
     color: #333;
     text-decoration: none;
-    font-size: 13px; /* Adjusted font size */
+    font-size: 12px; /* Adjusted font size */
     font-family: 'Roboto', sans-serif;
     border: 1px solid #ddd;
-    border-radius: 20px; /* Adjusted border-radius */
+    border-radius: 15px; /* Adjusted border-radius */
     background: #fff;
     transition: background 0.3s, color 0.3s;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .nav-item:hover {
@@ -150,9 +153,9 @@ body {
 }
 
 .nav-icon {
-    width: 18px; /* Adjusted size */
-    height: 18px; /* Adjusted size */
-    margin-right: 5px;
+    width: 16px; /* Adjusted size */
+    height: 16px; /* Adjusted size */
+    margin-right: 3px; /* Adjusted margin */
 }
 
 .allpost {
