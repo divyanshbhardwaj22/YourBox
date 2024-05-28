@@ -134,6 +134,7 @@ body {
 }
 
 .nav-item {
+    margin: .1rem;
     display: flex;
     align-items: center;
     padding: 3px 6px; /* Adjusted padding */
