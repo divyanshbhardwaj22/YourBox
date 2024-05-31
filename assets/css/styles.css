@@ -15,7 +15,7 @@ body {
     width: 450px;
     height: 100vh;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -179,15 +179,14 @@ body {
 .row {
     display: flex;
     justify-content: center;
-    gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 2rem;
 }
 
 .product-img {
-    width: 75%;
+    width: 85%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
